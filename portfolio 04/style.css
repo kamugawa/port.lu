@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+   height: 100%;
+   width: 100%;
+}
+ img {
+    background-image: url(escrita.png);
+
+    height: 600px;
+    width: 600px;
+    
+        margin: auto;
+        display: block;
+        width: 60%; /* Defina uma largura para a imagem */
+    }
+
+
+#foto {
+   
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      
+}
+
+#proj1 {
+    border-radius: 10%;
+    height: 290px;
+    width: 290px;
+    margin-left: 40px;
+}
+
+#proj2 {
+    border-radius: 10%;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 100px;
+
+}
+
+#proj3{
+    border-radius: 10%;
+    height: 300px;
+    width: 300px;
+}
+.menu-bars {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Esconde o menu inicialmente */
+    width: 250px;
+    height: 100%;
+    background: #000000;
+    transition: left 0.3s; /* Alterada a propriedade de transição */
+}
+
+#sidebar.active {
+    left: 0; /* Mostra o menu quando estiver ativo */
+    z-index: 999; /* Adicionado para garantir que o menu fique acima de outros elementos */
+}
+
+.sidebar-menu {
+    padding: 20px;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px 20px; /* Adiciona padding horizontal */
+    text-decoration: none;
+    font-size: 18px; /* Tamanho da fonte dos links */
+    transition: background-color 0.3s; /* Transição de cor de fundo */
+}
+
+.sidebar-menu a:hover {
+    background: #555;
+}
+
+/* Estilizando os ícones */
+.sidebar-menu i {
+    margin-right: 10px;
+}
+
+
+
+
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
